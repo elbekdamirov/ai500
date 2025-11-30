@@ -19,9 +19,9 @@ function App() {
         <ProblemSolution />
         <Benefits />
         <Features />
+        <Team />
         <WhyUs />
         <TechStack />
-        <Team />
         <Roadmap />
       </main>
       <Footer />
