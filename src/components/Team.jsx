@@ -4,23 +4,23 @@ const team = [
   {
     name: "Asal Botirova",
     role: "Research & Presentation Lead",
-    image: "https://ui-avatars.com/api/?name=Asal+Botirova&background=10b981&color=fff&size=256",
+    image: "/asal.jpg",
     linkedin: "https://www.linkedin.com/in/asal-botirova",
-    description: "Loyihalarni tadqiq qilish, foydalanuvchi muammolarini aniqlash va pitching bo‘yicha mutaxassis. Muammoning real bozor qiymatini tushuntiradi va loyiha strategiyasini boshqaradi."
+    description: "Loyihalarni tadqiq qilish, foydalanuvchi muammolarini aniqlash va pitching bo'yicha mutaxassis. Muammoning real bozor qiymatini tushuntiradi va loyiha strategiyasini boshqaradi."
   },
   {
     name: "Elbek Damirov",
     role: "Full-Stack Web Developer",
-    image: "https://ui-avatars.com/api/?name=Elbek+Damirov&background=3b82f6&color=fff&size=256",
+    image: "/elbek.png",
     linkedin: "https://www.linkedin.com/in/elbekdamirov/",
-    description: "Platformaning frontend interfeysi va foydalanuvchi tajribasi (UX) uchun mas’ul. React, Next.js va TailwindCSS yordamida tez va qulay interfeys yaratadi."
+    description: "Platformaning frontend interfeysi va foydalanuvchi tajribasi (UX) uchun mas'ul. React, Next.js va TailwindCSS yordamida tez va qulay interfeys yaratadi."
   },
   {
     name: "Mironshoh Xolmurodov",
     role: "Python & AI Developer",
-    image: "https://ui-avatars.com/api/?name=Mironshoh+Xolmurodov&background=8b5cf6&color=fff&size=256",
+    image: "/mironshoh.jpg",
     linkedin: "https://www.linkedin.com/in/mironshoh-xolmurodov/",
-    description: "AI Matching algoritmi, narx baholash va risk aniqlash modullarini ishlab chiquvchi. Python va Machine Learning bo‘yicha mutaxassis."
+    description: "AI Matching algoritmi, narx baholash va risk aniqlash modullarini ishlab chiquvchi. Python va Machine Learning bo'yicha mutaxassis."
   }
 ];
 
@@ -44,7 +44,7 @@ const Team = () => {
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-800 group-hover:border-primary-500 transition-colors"
+                  className="w-full h-64 rounded-xl mx-auto object-cover border-4 border-gray-800 group-hover:border-primary-500 transition-colors"
                 />
               </div>
               <h3 className="text-xl font-bold text-white mb-2 text-center">{member.name}</h3>
