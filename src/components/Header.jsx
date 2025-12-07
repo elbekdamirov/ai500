@@ -9,11 +9,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl font-heading font-bold text-primary-600">AgroXizmat</span>
+            <a href="/" className="text-2xl font-heading font-bold text-primary-600 hover:text-primary-500 transition-colors">AgroXizmat</a>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <a href="#demo" className="text-gray-300 hover:text-primary-500 font-medium transition-colors">Demo</a>
             <a href="#solution" className="text-gray-300 hover:text-primary-500 font-medium transition-colors">Yechim</a>
             <a href="#features" className="text-gray-300 hover:text-primary-500 font-medium transition-colors">Imkoniyatlar</a>
             <a href="#team" className="text-gray-300 hover:text-primary-500 font-medium transition-colors">Jamoa</a>
@@ -44,18 +45,16 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#features" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50">Imkoniyatlar</a>
-            <a href="#solution" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50">Yechim</a>
-            <a href="#team" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50">Jamoa</a>
-            <a href="#roadmap" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50">Reja</a>
-            <button className="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-primary-600 hover:bg-primary-50">
-              Boshlash
-            </button>
-          </div>
+        <div className="md:hidden fixed inset-0 top-20 bg-black/98 backdrop-blur-lg z-40 border-t border-gray-800">
+          <nav className="container mx-auto px-4 py-8 flex flex-col space-y-6">
+            <a href="#demo" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-primary-500 font-medium text-lg transition-colors">Demo</a>
+            <a href="#solution" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-primary-500 font-medium text-lg transition-colors">Yechim</a>
+            <a href="#features" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-primary-500 font-medium text-lg transition-colors">Imkoniyatlar</a>
+            <a href="#team" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-primary-500 font-medium text-lg transition-colors">Jamoa</a>
+            <a href="#roadmap" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-primary-500 font-medium text-lg transition-colors">Reja</a>
+          </nav>
         </div>
       )}
     </header>

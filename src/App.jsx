@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Demo from './components/Demo';
 import ProblemSolution from './components/ProblemSolution';
 import Benefits from './components/Benefits';
 import Features from './components/Features';
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Demo />
         <ProblemSolution />
         <Benefits />
         <Features />
