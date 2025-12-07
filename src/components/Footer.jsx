@@ -8,7 +8,9 @@ const Footer = () => {
           
           {/* Brand */}
           <div className="col-span-1">
-            <a href="/" className="text-2xl font-heading font-bold text-primary-500 mb-4 block hover:text-primary-400 transition-colors">AgroXizmat</a>
+            <a href="/" className="block mb-4 hover:opacity-80 transition-opacity">
+              <img src="/logo.png" alt="AgroXizmat" className="h-12 w-auto" />
+            </a>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               O'zbekiston qishloq xo'jaligida texnika va xizmatlarni topishni osonlashtiruvchi AI platformasi.
             </p>

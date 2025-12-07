@@ -8,8 +8,12 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <a href="/" className="text-2xl font-heading font-bold text-primary-600 hover:text-primary-500 transition-colors">AgroXizmat</a>
+          <div className="flex-shrink-0 flex items-center gap-2">
+            <a href="/" className="block hover:opacity-80 transition-opacity flex items-center gap-2">
+              <img src="/logo.png" alt="AgroXizmat" className="h-12 w-auto" />
+              <span className="text-2xl font-heading font-bold text-primary-600 hover:text-primary-500 transition-colors">AgroXizmat</span>
+            </a>
+
           </div>
 
           {/* Navigation */}
